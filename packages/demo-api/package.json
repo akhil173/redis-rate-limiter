@@ -6,7 +6,7 @@
     "dev": "tsx watch src/server.ts"
   },
   "dependencies": {
-    "@akhil/redis-rate-limiter": "*",
+    "@devakhil/redis-rate-limiter": "*",
     "express": "^4.19.2",
     "ioredis": "^5.4.1",
     "dotenv": "^16.4.5",

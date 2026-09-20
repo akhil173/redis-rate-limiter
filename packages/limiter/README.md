@@ -1,4 +1,4 @@
-# @akhil/redis-rate-limiter
+# @devakhil/redis-rate-limiter
 
 Distributed, Redis-backed rate limiting middleware for Express. Uses an atomic
 Lua-scripted token bucket, so the limit holds correctly across any number of
@@ -16,14 +16,14 @@ Redis. Verified under concurrent load with k6 across 3 replicas — see the
 ## Install
 
 ```bash
-npm install @akhil/redis-rate-limiter ioredis express
+npm install @devakhil/redis-rate-limiter ioredis express
 ```
 
 ## Usage
 
 ```ts
 import Redis from "ioredis";
-import { rateLimiter } from "@akhil/redis-rate-limiter";
+import { rateLimiter } from "@devakhil/redis-rate-limiter";
 
 const redis = new Redis(process.env.REDIS_URL);
 

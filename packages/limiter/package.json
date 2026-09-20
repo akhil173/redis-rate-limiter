@@ -1,5 +1,5 @@
 {
-  "name": "@akhil/redis-rate-limiter",
+  "name": "@devakhil/redis-rate-limiter",
   "version": "0.1.0",
   "description": "Distributed, Redis-backed rate limiting middleware for Express using atomic token-bucket Lua scripts",
   "main": "dist/index.js",

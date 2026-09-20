@@ -1,6 +1,6 @@
 # demo-api
 
-Reference implementation showing `@akhil/redis-rate-limiter` in a real
+Reference implementation showing `@devakhil/redis-rate-limiter` in a real
 Express app — layered IP + tenant rate limiting, JWT auth, and per-tenant
 Redis-backed quota config. This isn't published; it's the proof that the
 published package actually works end to end.

@@ -1,7 +1,8 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import { redis } from './redis';
-import { rateLimiter } from '@akhil/redis-rate-limiter';
+import { rateLimiter } from '@devakhil/redis-rate-limiter';
+import { authMiddleware } from './auth';
 
 dotenv.config();
 
@@ -34,7 +35,7 @@ app.get('/redis-check', async (_req, res) => {
     }
 });
 
-app.get('/ping', tenantLimiter, (_req, res) => {
+app.get('/ping', authMiddleware, tenantLimiter, (_req, res) => {
     return res.json({ message: 'Pong!' });
 });
 
