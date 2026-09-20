@@ -1,0 +1,28 @@
+{
+  "name": "@akhil/redis-rate-limiter",
+  "version": "0.1.0",
+  "description": "Distributed, Redis-backed rate limiting middleware for Express using atomic token-bucket Lua scripts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist", "README.md", "LICENSE"],
+  "license": "MIT",
+  "author": "Akhil",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akhil173/redis-rate-limiter",
+    "directory": "packages/limiter"
+  },
+  "keywords": ["redis", "rate-limiter", "distributed-systems", "express", "middleware", "token-bucket"],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "express": "^4.19.0",
+    "ioredis": "^5.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "@types/express": "^4.17.21"
+  }
+}

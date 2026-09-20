@@ -1,0 +1,9 @@
+{
+  "name": "redis-rate-limiter-monorepo",
+  "private": true,
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "dev": "npm run dev --workspace=packages/demo-api",
+    "build": "npm run build --workspaces"
+  }
+}
